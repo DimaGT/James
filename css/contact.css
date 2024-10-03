@@ -1,0 +1,216 @@
+.contactUsWrapper {
+    padding: 60px 80px 0 80px;
+}
+
+.contactUsRow {
+    display: flex;
+}
+.contactUsRow_item {
+    width: 50%;
+    min-width: 50%;
+}
+
+.contactUsContent {
+    position: relative;
+    box-sizing: border-box;
+    padding-top: 40px;
+    padding-right: 60px;
+    width: 100%;
+}
+
+.contactUsContent_wrapper {
+    margin-bottom: 30px;
+}
+
+.contactUsContent_title {
+    font-size: 40px;
+    font-weight: 500;
+    line-height: 1.3;
+}
+
+.contactUsContent_text {
+    font-size: 16px;
+    color: rgba(255, 255, 255, 0.80);
+    line-height: 1.6;
+}
+
+.contactUsContentList {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.contactUsContentList_item {
+    margin-bottom: 20px;
+}
+
+.contactUsContentList_item_link {
+    position: relative;
+    font-weight: 500;
+    font-size: 20px;
+    color: #ffffff;
+    line-height: 1.6;
+    padding-left: 32px;
+    display: block;
+    line-height: 1.4;
+}
+
+.contactUsContentList_item_link::before {
+    position: absolute;
+    content: '';
+    left: 0;
+    top: 50%;
+    transform: translateY(-60%);
+    width: 24px;
+    height: 24px;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.contactUsContentList_item_link_phone::before {
+    background-image: url(../images/contacts/call.png);
+}
+
+.contactUsContentList_item_link_email::before {
+    background-image: url(../images/contacts/sms.png);
+}
+
+.contactUsContentList_item_link_location::before {
+    background-image: url(../images/contacts/location.png);
+}
+
+.contactUsContentList_item_link_instagram::before {
+    transform: translateY(-50%);
+    background-image: url(../images/contacts/Instagram.png);
+}
+
+.contactUsContent_follow-title {
+    font-size: 16px;
+    font-weight: 300;
+    font-family: "Montserrat" sans-serif;
+    color: #ffffff;
+    margin-bottom: 8px;
+}
+
+.contactUs_form_wrapper {
+    width: 100%;
+    background: rgba(255, 255, 255, 0.08);
+    padding: 40px 30px;
+    box-sizing: border-box;
+}
+
+.contactUs_form_title {
+    text-align: center;
+    text-transform: none !important;
+}
+
+.contactUs_form_title_wrapper {
+    margin-bottom: 30px;
+}
+
+.contactUs_form {
+    width: 100%;
+}
+
+.contactUs_form_row {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 -8px;
+    margin-bottom: 16px;
+}
+
+.contactUs_form_row_half_item {
+    width: 50%;
+    margin: 0 8px;
+}
+
+.contactUs_form_row_full_item {
+    width: 100%;
+    margin: 0 8px;
+}
+
+.contactUs_form_input {
+    padding: 24px 20px;
+    font-size: 16px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    text-transform: none !important;
+    overflow-y: auto;
+    height: auto;
+}
+
+.contactUs_form_input::placeholder {
+    color: rgba(255, 255, 255, 0.6);
+    font-weight: 300;
+}
+
+.contactUs_form_btn {
+    outline: none;
+    width: 100%;
+    padding: 24px 20px;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 700;
+    color: #252525;
+    background-color: #ffffff;
+    border: 1px solid #ffffff;
+}
+
+.contactUs_form_btn:hover {
+    background-color: #EEE8D5;
+    border: 1px solid #EEE8D5;
+}
+
+@media (max-width: 1170px) {
+    .contactUsWrapper {
+        padding: 20px 0 0 0;
+    }
+}
+
+@media (max-width: 968px) {
+    .contactUsContent_title {
+        font-size: 32px;
+    }
+    .contactUs_form_row {
+        flex-wrap: wrap;
+        margin-bottom: 12px;
+    }
+    .contactUs_form_row_half_item {
+        width: 100%;
+        margin-bottom: 12px;
+    }
+    .contactUs_form_row_half_item:last-child {
+        margin-bottom: 0;
+    }
+    .contactUs_form_input {
+        padding: 18px 16px;
+        margin-bottom: 0;
+    }
+    .contactUs_form_btn {
+        padding: 18px 16px;
+    }
+    .contactUsContentList_item_link {
+        font-size: 18px;
+    }
+}
+@media (max-width: 768px) {
+    .contactUsRow {
+        display: flex;
+        flex-direction: column;
+    }
+    .contactUsRow_item {
+        width: 100%;
+        min-width: 100%;
+    }
+    .contactUsContent {
+        padding-top: 20px;
+        padding-right: 0;
+        width: 100%;
+    }
+    .contactUsContentList_item_link {
+        font-size: 16px;
+    }
+    .contactUs_form_wrapper {
+        padding: 30px 20px;
+    }
+}

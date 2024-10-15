@@ -921,7 +921,7 @@ jQuery(function ($) {
 
 			function doneResizing() {
 				BulletsPosition();
-				LinesWidth();
+				// LinesWidth();
 			}
 
 			if (!isMobile()) {

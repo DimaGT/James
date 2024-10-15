@@ -2421,11 +2421,14 @@ Function Lightbox
 			}			
 		});
 		
-		$(".image-link").mouseenter(function(e) {	
+		$(".image-link").mouseenter(function(e) {
 			gsap.to('#ball', {duration: 0.2, borderWidth: '2px', scale: 1, borderColor:'#fff',});
 			gsap.to('#ball-loader', {duration: 0.2, borderWidth: '2px', top: 2, left: 2});
-			$( "#ball" ).addClass("with-icon").append( '<i class="fa-solid fa-plus"></i>' );
-		});
+			 
+			if (!$("#ball i.fa-plus").length) {  // Проверяем, есть ли уже иконка
+			  $("#ball").addClass("with-icon").append('<i class="fa-solid fa-plus"></i>');
+			}
+		  });
 			
 		$(".image-link").mouseleave(function(e) {
 			gsap.to('#ball', {duration: 0.2, borderWidth: '4px', scale:0.5, borderColor:'#999999',});

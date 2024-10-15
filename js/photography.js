@@ -8,10 +8,10 @@ const imagesPerPage = 20;
 const templateItem = (data) => (
     `
     <div>
-        <img src="${data?.src}" alt="${data?.alt || ''}" />
+        <img loading="lazy" src="${data?.src}" alt="${data?.alt || ''}" />
         <figure class="has-animation has-cover" data-delay="0" style="opacity: 0">
             <a href="${data?.src}" class="image-link">
-                <img src="${data?.src}" alt="${data?.alt || ''}" style="opacity: 0">
+                <img loading="lazy" src="${data?.src}" alt="${data?.alt || ''}" style="opacity: 0">
             </a>
         </figure>
     </div>

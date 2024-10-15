@@ -1932,6 +1932,7 @@ nav.open {
 	justify-content: center;
 	background: rgba(23, 23, 23, 0.25);
 	backdrop-filter: blur(15px);
+	-webkit-backdrop-filter: blur(15px);
 	z-index: 9;
 }
 
@@ -1953,6 +1954,7 @@ nav.open {
 	font-weight: 700;
 	margin-bottom: 0;
 }
+
 @keyframes animationStarsDecor {
 	0% {
 		opacity: 1;
